@@ -1,0 +1,123 @@
+.App {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  background-image:url(./background.png) ;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  width: 100%;
+  height: 100%;
+  color: #e8b923;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  vertical-align:top;
+}
+.title{
+  margin-bottom: .5em;
+  font-size: 40px;
+}
+.sub-title{
+  font-size: 30px;
+  margin-bottom: 1em;
+}
+.container{
+  color: #e8b923;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  width: 100%;
+  min-width: 1000px;
+  max-height: 1000px;
+}
+.tier-row-odd{
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 90px auto;
+  grid-template-rows: auto;
+  border-style: solid;
+  border-width: 1px;
+}
+.tier-row-even{
+  background-color: #A9A9A9;
+  display: grid;
+  grid-template-columns: 90px auto;
+  grid-template-rows: auto;
+  border-style: solid;
+  border-width: 1px;
+}
+.tier{
+  text-align: center;
+  margin: 0px;
+  padding: 1em;
+  border-right: 1px solid;
+  font-size: 24px;
+  font-weight: bold;
+}
+.tier-bench{
+  text-align: center;
+  margin: 0px;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  border-right: 1px solid;
+  font-size: 20px;
+  font-weight: bold;
+}
+.tier-list{
+  text-align: start;
+  padding: 0.25em;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.card {
+  position: relative;
+  float: left;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: white;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  padding: 14px;
+}
+.card:hover{
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+.delete-button{
+  background-color: black;
+  color: #e8b923;
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.delete-container{
+ width: 100%;
+}
+.add-container{
+  padding: 1em;
+}
+.add-input{
+  font-size: 16px;
+}
+.add-button{
+  font-size: 16px;
+}
