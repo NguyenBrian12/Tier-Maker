@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Tier-Maker/static/css/main.c4b914f3.chunk.css",
+    "main.js": "/Tier-Maker/static/js/main.44ea6173.chunk.js",
+    "main.js.map": "/Tier-Maker/static/js/main.44ea6173.chunk.js.map",
+    "runtime~main.js": "/Tier-Maker/static/js/runtime~main.79c94e6f.js",
+    "runtime~main.js.map": "/Tier-Maker/static/js/runtime~main.79c94e6f.js.map",
+    "static/js/2.a916798e.chunk.js": "/Tier-Maker/static/js/2.a916798e.chunk.js",
+    "static/js/2.a916798e.chunk.js.map": "/Tier-Maker/static/js/2.a916798e.chunk.js.map",
+    "index.html": "/Tier-Maker/index.html",
+    "precache-manifest.21e79e0b0ba2f0910ad40b7c5961cd73.js": "/Tier-Maker/precache-manifest.21e79e0b0ba2f0910ad40b7c5961cd73.js",
+    "service-worker.js": "/Tier-Maker/service-worker.js",
+    "static/css/main.c4b914f3.chunk.css.map": "/Tier-Maker/static/css/main.c4b914f3.chunk.css.map",
+    "static/media/App.css": "/Tier-Maker/static/media/background.c6065261.png"
+  }
+}
