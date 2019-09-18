@@ -1,3 +1,5 @@
+View Example [Here](http://nguyenbrian12.com/Tier-Maker/). 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
