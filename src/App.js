@@ -35,7 +35,7 @@ function App() {
     setItem("");
     }
   }
-  ```hightlight
+  ```highlight
   const onDragStart = (e, itemId) => {
     e.dataTransfer.setData("item", itemId);
   }
