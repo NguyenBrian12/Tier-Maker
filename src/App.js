@@ -4,8 +4,11 @@ import {adding, deleting, changingTier} from "./actions";
 import './css/App.css';
 function App() {
   const [item, setItem] = React.useState("");
+  
   const tierlist = useSelector(state => state.tierlist.tierlist);
+ 
   const dispatch = useDispatch();
+  
   const list = {
     sTier:[],
     aTier:[],
@@ -15,6 +18,7 @@ function App() {
     fTier:[],
     benchTier:[]
   }
+  
   const handleEnterPressed = (e) => {
     var code = e.keyCode || e.which;
     if (code === 13 && item){
@@ -23,6 +27,7 @@ function App() {
       setItem("");
     }
   }
+  
   const handleSubmit = (e) => {
     if(item){
     e.preventDefault();
@@ -34,10 +39,11 @@ function App() {
   const onDragStart = (e, itemId) => {
     e.dataTransfer.setData("item", itemId);
   }
+  
   const onDragOver = (e) => {
     e.preventDefault();
   }
-  ```
+
   const onDrop = (e, tier) => {
     let itemId = Number(e.dataTransfer.getData("item"));
     let items = tierlist.filter((item)=> {
@@ -49,7 +55,7 @@ function App() {
     })
     dispatch(changingTier(items));
   }
-  ```
+  
 tierlist.sort((a,b) => a.index - b.index).map((item) => {
   list[item.tier].push(
     <div key={item.id} className="draggable card" draggable onDragStart={(e)=>onDragStart(e, item.id)}>
