@@ -37,7 +37,8 @@ function App() {
   const onDragOver = (e) => {
     e.preventDefault();
   }
-	const onDrop = (e, tier) => {
+  ```
+  const onDrop = (e, tier) => {
     let itemId = Number(e.dataTransfer.getData("item"));
     let items = tierlist.filter((item)=> {
       if(item.id === itemId){
@@ -48,6 +49,7 @@ function App() {
     })
     dispatch(changingTier(items));
 }
+```
 tierlist.sort((a,b) => a.index - b.index).map((item) => {
   list[item.tier].push(
     <div key={item.id} className="draggable card" draggable onDragStart={(e)=>onDragStart(e, item.id)}>
