@@ -55,6 +55,7 @@ function App() {
     })
     dispatch(changingTier(items));
   }
+  
  ``` highlighted code
 tierlist.sort((a,b) => a.index - b.index).map((item) => {
   list[item.tier].push(
