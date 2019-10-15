@@ -35,7 +35,7 @@ function App() {
     setItem("");
     }
   }
-  ```highlighted code
+
   const onDragStart = (e, itemId) => {
     e.dataTransfer.setData("item", itemId);
   }
@@ -55,7 +55,7 @@ function App() {
     })
     dispatch(changingTier(items));
   }
-  ```
+ ```
 tierlist.sort((a,b) => a.index - b.index).map((item) => {
   list[item.tier].push(
     <div key={item.id} className="draggable card" draggable onDragStart={(e)=>onDragStart(e, item.id)}>
@@ -66,7 +66,7 @@ tierlist.sort((a,b) => a.index - b.index).map((item) => {
     </div>
   )
 })
-
+```
 
   return (
     <div className="App">
